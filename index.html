@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PopCat Clicker</title>
+</head>
+<body>
+
+  <center><h1>КЛИКЕР 😺</h1></center>
+
+  <h2>
+    Score: <span id="score">0</span>
+    <img id="coin1" src="PopCatCoin.png" alt="Coin" class="coin-icon">
+  </h2>
+
+  <center>
+    <img id="popcat" src="PopCat.png" alt="pop cat">
+  </center>
+
+  <br><br><br><br>
+
+  <button  id="shop">Открыть Магазин POP CAT</button>
+
+  <div id="shopOverlay">
+    <div id="shopWindow">
+      <h2 id="h2">Магазин POP CAT</h2>
+      <button id="closeShop">Закрыть ✖</button>
+
+      <div class="shop-items">
+
+        <div class="item">
+          <img src="ChristmasPopCat.png" alt="Скин 1">
+          <p id="NewYearPopCatText">Новогодний Pop Cat</p>
+          <p class="price">
+            Цена: 1000
+            <img id="coin2" src="PopCatCoin.png" alt="" width="15">
+          </p>
+          <button id="skin1" class="buy">Купить</button>
+        </div>
+
+        <div class="item">
+          <img id="PopCornPopCat" src="PopCornPopCat.png" alt="Скин 2">
+          <p>Поп Корн</p>
+          <p id="PopCornPopCatText" class="price">
+            Цена: 2000
+            <img id="coin3" src="PopCatCoin.png" alt="" width="15">
+          </p>
+          <button id="skin2" class="buy">Купить</button>
+        </div>
+
+        <div class="item">
+          <img src="2Xicon.png" alt="Улучшение">
+          <p>x2 множитель очков</p>
+          <p class="price">
+            Цена: 500
+            <img id="coin4" src="PopCatCoin.png" alt="" width="15">
+          </p>
+          <button id="x2" class="buy">Купить</button>
+        </div>
+
+        <div class="item">
+          <img src="Rebirth.png" alt="Ребёрт">
+          <p>Перерождение</p>
+          <p id="rebirthPrice">
+            Цена: 1000
+            <img id="coin5" src="PopCatCoin.png" alt="" width="15">
+          </p>
+          <button id="rebirthBtn" class="buy">Переродиться
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="volume-control">
+    <label for="volume">🔊 Громкость:</label>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+  </div>
+
+  <button id="playBtn">🔊 Включить музыку</button>
+
+  <audio id="bgMusic" src="Music.mp3" autoplay loop></audio>
+  <audio id="PopCatSound" src="PopCatSound.mp3"></audio>
+  <audio id="Knock" src="Knock.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
